@@ -105,12 +105,7 @@ if (empty($GLOBALS['bs_css_loaded'])) {
                             <li><a class="dropdown-item" href="daftar_mengajar.php">Daftar Mengajar</a></li>
                             <li><a class="dropdown-item" href="form_tambah_mengajar.php">Tambah Mengajar</a></li>
                         </ul>
-                    </li>
-
-                    <!-- Menu Dashboard khusus Admin -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="dashbord.php">Dashboard</a>
-                    </li>
+                  </li>
 
                 <?php elseif ($role === 'guru'): ?>
                     <!-- GURU: cuma tampil Home dan Daftar Kelas -->
