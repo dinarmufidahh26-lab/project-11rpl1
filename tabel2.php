@@ -1,4 +1,5 @@
 <?php require_once ("navbar.php");
+/** @var mysqli $koneksi */
 require_once("koneksi.php"); //memanggil file koneksi
 
 // Query untuk mengambil data dari tabel users
@@ -54,8 +55,8 @@ if (mysqli_num_rows($hasil) > 0){
       <td><?php echo htmlspecialchars($user['role']); ?></td>
       <td><?php echo htmlspecialchars($user['created_at']); ?></td>
       <td class="text-center">
-          <a href="edit_user.php?id=<?php echo $user['id']; ?>" class="btn btn-primary btn-sm">Edit</a>
-          <a href="delete_user.php?id=<?php echo $user['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Delete</a>
+          <a href="form_edit_user.php?id=<?php echo $user['id']; ?>" class="btn btn-primary btn-sm">Edit</a>
+          <a href="aksi_delete_user.php?id=<?php echo $user['id']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Delete</a>
       </td>
     </tr>
     <?php 

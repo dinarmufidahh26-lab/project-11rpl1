@@ -8,9 +8,9 @@ $angka=[
 $i=0;
 while($i < count($angka)){
     for($j=0;$j < count($angka[$i]);$j++)
-        {
+}
             echo"angka:".$angka[$i][$j]."<br>;
-        }
+        {
             echo"=============================="." <br>";
             $i++,
             }
